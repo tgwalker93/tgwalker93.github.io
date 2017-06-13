@@ -1,0 +1,29 @@
+#navbar #holder ul {
+	list-style: none;
+	margin:0;
+	padding:0;
+
+}
+
+#navbar #holder ul li a {
+	text-decoration: none; 
+	float: right;
+
+	font-family: "Arial Black", Gadget, sans-serif;
+	color: #000;
+	margin-right: 5px;
+	border: 2px solid #000;
+	border-bottom:none;
+	padding: 20px;
+	text-align: center;
+	display: block;
+	background: #69F;
+
+	
+}
+
+#navbar #holder ul li a:hover {
+	background-color:#F90;
+	color:#FFF;
+	text-shadow: 1px 1px 1px #000;
+}
