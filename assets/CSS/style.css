@@ -17,22 +17,52 @@ h1 {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	font-size: 40px;
+	font-family: 'Georgia', Times, Times New Roman, serif;
 
 }
 
 h2 {
 	text-align: center;
-	font-size: 10px;
-	color: white;
+	font-size: 20px;
+	color: #4aaaa5;
 	width: 100px;
-	background-color: #4aaaa5;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	margin-bottom: -10px;
+}
+h3 {
+    font-size: 15px;
+    color: #4aaaa5;
+    margin-bottom: 20px;
+    margin-left: -1px;
+    margin-top: 20px;
+
 }
 
+#navbar {
+
+}
 .container {
 	width: 1024px;
 	margin: 0 auto;
 }
 
+#githubpic, #stackoverflowpic, #linkedinpic {
+
+	width: 40px;
+	height: 40px;
+
+}
+#bio-paragraphs {
+
+	color: #777777;
+
+}
+#bio-pic {
+	float: left;
+    width: 200px;
+    height: 200px;
+    margin: 20px 20px 0px 0px;
+}
 #main-bio,
 #contact-info,
 #bio-image {
@@ -42,10 +72,16 @@ h2 {
 }
 
 #main-bio {
-	width: 70%;
+	width: 50%;
+	margin-bottom: 150px;
 }
 #contact-info {
-	width: 30%;
+	width: 10%;
+	position:fixed;
+	margin-top: 85px;
+    margin-right: 273px;
+    top: 0px;
+    right: 0px;
 }
 #bio-image {
 	margin-right: 20px;
@@ -71,16 +107,15 @@ ul {
 	text-decoration: none; 
 	float: right;
 
-	font-family: "Arial Black", Gadget, sans-serif;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;.
 	color: #efeee7;
 	margin-right: 5px;
-	border-bottom: 2px solid #4aaaa5;
 	padding: 20px;
 	text-align: center;
 	display: block;
-	background: #4aaaa5;
+	color: #cccccc;
+	font-size: 8px;
 
-	
 }
 
 #navbar #navname {
@@ -102,6 +137,18 @@ ul {
 
 
 /*----- Contact Forms for Contact page -------*/
+
+#form-contact {
+
+	color: #cccccc;
+
+}
+
+.wrapper {
+
+	width:50%;
+	margin-bottom: 50px;
+}
 .form-box {
 	width: 100%;
 	padding: 80px 80px;
@@ -113,9 +160,9 @@ ul {
 	height: 30px;
 	margin-bottom: 4px;
 	padding: 0px 0.5%;
-	border: 1px solid #333333;
+	border: 1px solid #cccccc;
 	font-size: 8px;
-	color: #282828;
+	color: #cccccc;
 	font-family: Lato;
 
 }
@@ -123,7 +170,7 @@ ul {
 
 .form-box form p {
 	font-size: 16px;
-	color: #282828;
+	color: #cccccc;
 	font-family: Lato;
 	float: left;
 	padding-top: 10px;
@@ -136,10 +183,10 @@ ul {
 	height: 300px;
 	margin-bottom: 4px;
 	padding: 6px 0.5%;
-	border: 1px solid #333333;
-	font-size: 16px;
-	color: #282828;
-	font-family: Lato;
+	border: 1px solid #cccccc;
+	font-size: 13px;
+	color: #cccccc;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	resize: none;
 
 }
@@ -147,18 +194,71 @@ ul {
 .form-box button {
 	width: 80px;
 	height: 30px;
-	background-color: #333333;
-	color: #efeee7;
-	font-size: 16px;
-	font-family: Lato;
-	text-transform: uppercase;
+	background-color: #4aaaa5;
+	color: #ffffff;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	text-align: center;
+	font-size: 13px;
+    border: none;
+
 }
 
-/*-------Portfolio title-----*/
+
+
+
+/*-------Portfolio-----*/
+#main-portfolio {
+
+	width: 50%;
+    margin-bottom: 150px;
+
+}
+#porfolio-pic1, 
+#porfolio-pic2,
+#porfolio-pic3,
+#porfolio-pic4,
+#porfolio-pic5,
+#porfolio-pic6 {
+
+	width: 200px;
+	height: 200px;
+
+}
+
+#portfolio1 {
+	z-index: 10;
+
+}
+
+#portfolio-pics p {
+    position: absolute;
+    z-index: 10;
+    color: white;
+}
+
+#portfolio-p1 {
+
+}
+#portfolio-p2 {
+	
+}
+#portfolio-p3 {
+	
+}
+#portfolio-p4 {
+	
+}
+#portfolio-p5 {
+	
+}
+
+
+/*------Underscore line ---------*/
 
 hr {
 	float: left;
-	background-color: #777777;;
+	color: #cccccc;
+	background-color:#cccccc;;
 	height: 0.5px;
 	width: 100%;
 	clear: both;
@@ -169,15 +269,20 @@ hr {
 /*--------footer---------*/
 
 footer {
+	position:fixed;
 	clear: both;
     bottom:0;
     width:100%;
     height:40px;
     z-index: 10; 	
 	color: #efeee7;
-	background: #4aaaa5;
 	text-align: center;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	font-size: 10px;
+	background-color: #666666;
+	border-style:solid none none none;
+	border-color: #4aaaa5;
+	border-width: 5px;
+
 }
