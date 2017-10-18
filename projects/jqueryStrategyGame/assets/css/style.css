@@ -1,0 +1,145 @@
+html {
+  height: 100%;
+  zoom: 52%;
+}
+body {
+  min-height: 100%;
+  overflow-x:hidden;
+  background-image:url("../images/background.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: black;
+  font-family: 'Bungee Inline', cursive;
+  font-family: 'Gravitas One', cursive;
+  font-family: 'Vast Shadow', cursive;
+}
+
+img {
+	width: 200px;
+	height: 200px;
+
+}
+
+
+
+button {
+  background-color:#238f4e;
+  color:#FFF;
+  text-shadow: 1px 1px 1px #000;
+
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+#gameText {
+
+  font-size: 30px;
+
+
+}
+
+h1 {
+
+}
+
+.panel-title {
+
+    text-align: center;
+    font-size: 160%;
+    background-color: #238f4e;
+
+}
+
+.panel-body {
+    background-color: #5ff5a7;
+}
+
+.panel-heading {
+  background-color: #238f4e;
+  padding: 0px;
+}
+
+.jumbotron {
+  background-color: #238f4e;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.jumbotron h1 {
+  width: 125%;
+}
+
+/*------ IMAGES ------------------------------------------------*/
+
+.work {
+  position: relative;
+  width: 200px;
+  margin: 20px 0 25px;
+  overflow: none;
+}
+
+.work:nth-child(even) {
+  margin-right: 40px;
+}
+
+.work img {
+  width: 100%;
+  border: 0 none;
+  opacity: 0.8;
+}
+
+.work h3 {
+  font-size: 85%;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  background: #238f4e;
+  border-bottom: 0;
+}
+
+/*------ END IMAGES ------------------------------------------------*/
+
+
+
+.row {
+  margin-left: 1%;
+}
+
+
+@media (min-width: 992px) {
+
+.col-md-2 {
+
+  width: 11%;
+
+}
+
+}
+
+@media (min-width: 992px) {
+
+  #characterArea {
+    width: 67%;
+  }
+  #enemiesArea {
+    width: 67%;
+  }
+  #defenderArea {
+    width: 67%;
+  }
+
+
+
+}
+
