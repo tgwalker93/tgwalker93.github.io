@@ -42,7 +42,8 @@ p {
 	font-size: 50px;
 }
 #word li {
-	margin-right: 10px;
+  margin-right: 10px;
+  list-style: none;
 }
 #word li::first-child {
 	text-transform: uppercase;
