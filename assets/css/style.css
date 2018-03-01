@@ -55,6 +55,26 @@ header {
     color: #fff;
     text-shadow: 0 2px 3px #556b8e
 }
+
+#loading {
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   position: fixed;
+   display: block;
+   opacity: 0.7;
+   background-color: #fff;
+   z-index: 99;
+   text-align: center;
+}
+
+#loading-image {
+  position: absolute;
+  top: 100px;
+  left: 240px;
+  z-index: 100;
+}
 nav {
     margin: 15px auto 0;
     padding-top: 20px;
