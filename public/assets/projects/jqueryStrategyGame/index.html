@@ -25,25 +25,64 @@
 <body>
 
 
-<div class="jumbotron jumbotron-fluid">
+<!-- <div class="jumbotron jumbotron-fluid">
   <div class="container">
-    <h1 class="display-3">World of Warcraft Strategy GAME!</h1>
+    <h1 class="display-3">World of Warcraft RPG GAME!</h1>
     <p class="lead"></p>
   </div>
-</div>
+</div> -->
+<h1 id="title"> World of Warcraft Strategy Game</h1>
 
 
 
 
 
+<div class="container-fluid">
 
-<div class="w3-container"> 
+	<!-- The Modal -->
+	<div id="modal" class="modal">
+		<!-- <div class="modal-header">
+			<span class="close">&times;</span>
+			<h2>HOW TO PLAY</h2>
+		</div> -->
+		<!-- Modal content -->
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<p id="howToText">Each character has a set of 3 spells on top of their original attack. Each character has health and attack power.
+				Attack power will always represent how much extra damage your character's "attack" spell will do to the enemy. Attack power
+				will naturally increase every round. Please note, your attack power only affects the "attack" slot and not your 3 spell
+				slots. Each spell will do something different, and every class has 3 unique spells. After you select a character, you must
+				defeat the other three characters. After you defeat an enemy, the new enemy attack power will reset back to 0. Enemy attack
+				power constantly grows. However, your character attack power stays the same. You have to find the right time, after building
+				enough attack power, to start using your attack. Every class has atleast one spell that increases attack power. Using attack
+				is essential to winning the game. Select your character to begin! </p>
+
+		</div>
+			<!-- <div class="modal-footer">
+				<h3>Modal Footer</h3>
+			</div> -->
+	
+	</div>
 
 <!-- BIG FIRST COLUMN -->
 <div class="row" id="mainRow">
-<div class="col-sm-6">
+<div class="col-sm-12">
+
+<div class="row">
+	<div class="col-sm-12">
+
+	<div class="panel panel-default">
+
+		<div class="panel-body">
+					<div id="gameTextContainer">
+						<p id="gameText">Let's play. Choose your character!</p>
+					</div>
+		</div>
+	</div>
 
 
+	</div>
+</div>
 
 <div class="row">	
 <div class="col-sm-12">	
@@ -59,55 +98,98 @@
 
  					<div id="characterArea"> 
 
-	<div id="warrior" class="col-md-3">	
+	<div id="warrior" class="col-md-3 classCard" data-isEnemy="False" data-isChosen="False">	
+		<h3 id="warriorTitle" class="classTitle">Warrior</h3>
 		<div class="work">
-    		<img src="assets/images/warrior.jpg" alt="hangman">
+    		<img src="assets/images/warrior.jpg" alt="Warrior">
 
-        	<h3 id="warriorHP">Warrior: 130</h3>
+
       	</div>
-
+		
+		<div id="warriorHealth" class="health-bar" data-total="100" data-value="100">
+			<div id="warriorbar" class="bar">
+				<span id="warriorHPNum" class="hpNum"> 100 </span>
+				<div id="warriorhit" class="hit"></div>
+			</div>
+		</div>
+		<div id="warriorAttackPower" class="attackPower">
+			Attack Power: 1
+		</div>
+		  
     </div>
 
 
 
-      	<div id="mage" class="col-sm-3">	
+      	<div id="mage" class="col-sm-3 classCard" data-isEnemy="False" data-isChosen="False">	
 
-	      <div class="work">
-	        <img src="assets/images/mage.jpg" alt="RPG Game">
+			<h3 id="mageTitle" class="classTitle">Mage</h3>
 
-	       <h3 id="mageHP">Mage: 100</h3>
-	      </div>
+			<div class="work">
+			<img src="assets/images/mage.jpg" alt="Mage">
 
+			</div>
+		  
+			<div id="mageHealth" class="health-bar" data-total="100" data-value="100">
+				<div id="magebar" class="bar">
+
+					<span id="mageHPNum" class="hpNum"> 100 </span>
+					<div id="magehit" class="hit"></div>
+				</div>
+			</div>
+			<div id="mageAttackPower" class="attackPower">
+				Attack Power: 1
+			</div>
       </div>
 
 
 
-      <div id ="hunter" class="col-sm-3">
+      <div id ="hunter" class="col-sm-3 classCard" data-isEnemy="False" data-isChosen="False">
 
-	      <div class="work">
-	        <img src="assets/images/hunter.jpg" alt="Trivia Game">
+			<h3 id="hunterTitle" class="classTitle">Hunter</h3>
 
-	        <h3 id="hunterHP">Hunter: 120</h3>
-	      </div>
+			<div class="work">
+			<img src="assets/images/hunter.jpg" alt="Hunter">
+			</div>
 
+			<div id="hunterHealth" class="health-bar" data-total="100" data-value="100">
+				<div id="hunterbar" class="bar">
+					<span id="hunterHPNum" class="hpNum"> 100 </span>
+					<div id="hunterhit" class="hit"></div>
+				</div>
+			</div>
+			<div id="hunterAttackPower" class="attackPower">
+				Attack Power: 1
+			</div>
       </div>
 
 
 
-      <div id="rogue" class="col-sm-3">
+      <div id="rogue" class="col-sm-3 classCard" data-isEnemy="False" data-isChosen="False">
 
+		<h3 id="rogueTitle" class="classTitle">Rogue</h3>
 		  <div class="work">
-		    <img src="assets/images/rogue.jpg" alt="Rutgers Info Widget">
-
-		    <h3 id="rogueHP">Rogue: 110</h3>
+		    <img src="assets/images/rogue.jpg" alt="Rogue">
 		  </div>
 
-      </div>
-					</div>
+			<div id="rogueHealth" class="health-bar" data-total="100" data-value="100">
 
-								</div>
-  </div>
-							</div>
+				
+
+				<div id="roguebar" class="bar">
+					<span id="rogueHPNum" class="hpNum"> 100 </span>
+					<div id="roguehit" class="hit"></div>
+				</div>
+				
+			</div>
+			<div id="rogueAttackPower" class="attackPower">
+				Attack Power: 1 
+			</div>
+      </div>
+			</div>
+
+			</div>
+			</div>
+			</div>
 
 
 
@@ -185,11 +267,12 @@
    <div id="fight"> <h1 class="panel-title">Fight Section</h1> </div>
   </div>
   <div class="panel-body">
-    <div id="fightArea"> 
-		<button id="attack" type="button" class="btn btn-outline-primary">Attack</button>
-		<button id="attack1" type="button" class="btn btn-outline-primary">Spell Slot 1</button>
-		<button id="attack2" type="button" class="btn btn-outline-primary">Spell Slot 2</button>
-		<button id="attack3" type="button" class="btn btn-outline-primary">Spell Slot 3</button>
+    <div id="fightArea">
+
+		<button id="attack" type="button" class="btn btn-outline-primary damage random"><span>Attack</span></button>
+		<button id="attack1" type="button" class="btn btn-outline-primary damage random"><span>Spell Slot 1</span></button>
+		<button id="attack2" type="button" class="btn btn-outline-primary damage random"><span>Spell Slot 2</span></button>
+		<button id="attack3" type="button" class="btn btn-outline-primary damage random"><span>Spell Slot 3</span></button>
 	</div>
   </div>
 	</div>
@@ -233,127 +316,17 @@
 
 
 
-<!-- END OF FIRST COLUMN CONTAINER ROW  -->		
-			</div>
 
 
 
 
-<!-- MAIN COLUMN TO THE RIGHT  -->
-<div class="col-sm-4">	
 
-
-<!-- FIRST ROW SECOND COLUMN  -->
-<div class="row">
-	<div class="col-sm-12">	
-
-
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h1 class="panel-title">Game Text</h1>
-  </div>
-  <div class="panel-body">
-   		<p id="gameText"> How to play: Each character has a set of 3 spells on top of their original attack.  Each character has health and attack power. Attack power will always represent how much extra damage your character's "attack" spell will do to the enemy. Attack power will naturally increase every round. Please note, your attack power only affects the "attack" slot and not your 3 spell slots. Each spell will do something different, and every class has 3 unique spells. After you select a character, you must defeat the other three characters. After you defeat an enemy, the new enemy attack power will reset back to 0. Enemy attack power constantly grows. However, your character attack power stays the same. You have to find the right time, after building enough attack power, to start using your attack. Every class has atleast one spell that increases attack power. Using attack is essential to winning the game. Select your character to begin! </p>
-
-
-		<div id="gameArea"> </div>
-  </div>
+<!-- END OF FIRST COLUMN CONTAINER ROW  -->
 </div>
-
-
-
-
-
-<!-- END FIRST ROW SECOND COLUMN  -->
 </div>
 
 </div>
-
-
-
-
-
-
-
-<!-- FIRST ROW SECOND COLUMN  -->
-<div class="row">
-	<div class="col-sm-12">	
-
-
-<div class="panel panel-default">
-	  <div class="panel-heading">
-		<h1 class="panel-title">Stats</h1> 
-	 
-	  </div>
-
-  <div class="panel-body">
-   		<h1 id="charHP"> Your Character HP:  </h1>
-   		<h1 id="charAP"> Your Character Attack Power:  </h1>
-   		<h1 id="charA"> Your Character Attack:  </h1>
-   		<br>
-   		<h1 id="enemyHP"> Enemy HP:  </h1>
-   		<h1 id="enemyAP"> Enemy Attack Power:  </h1>
-   		<h1 id="enemyA"> Enemy Attack:  </h1>
-
-  </div>
-
-
-</div>
-
-
-
-
-
-	</div>
-
-</div>
-
-
-
-
-
-
-
-<!-- FIRST ROW SECOND COLUMN  -->
-<div class="row">
-	<div class="col-sm-12">	
-
-
-<div class="panel panel-default">
-	  <div class="panel-heading">
-		<h1 class="panel-title">Spell Info</h1> 
-	 
-	  </div>
-
-  <div class="panel-body">
-   		<h1 id="spellInfo1"> </h1>
-   		<br>
-   		<h1 id="spellInfo2"> </h1>
-   		<br>
-   		<h1 id="spellInfo3"></h1>
-   		<br>
-
-  </div>
-
-
-</div>
-
-
-
-
-
-	</div>
-
-</div>
-
-<!-- END OF MAIN COLUMN TO THE RIGHT  -->
-</div>
-
-
-												
-												
-												</div>
-
+			<button id="howToPlayBtn">How To Play</button>
   <!--- Javascript-->
   <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>

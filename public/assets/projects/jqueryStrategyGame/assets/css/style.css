@@ -1,6 +1,203 @@
+
+.btn:focus,
+.btn:active {
+  outline: none !important;
+  color: #FFF;
+}
+.btn:active:focus {
+    color: #FFF;
+}
+.btn:hover {
+color: #000;
+}
+#howToPlayBtn {
+      position: fixed;
+      bottom: -4px;
+      right: 10px;
+      background-color: #238f4e;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 4px;
+}
+
+#gameTextContainer {
+    text-align: center;
+}
+#mainRow {
+  margin-right: 200px;
+  margin-left: 200px;
+}
+.attackPower {
+  font-size: 20px;
+}
+.classCard {
+  width: 245px;
+  border: 1px solid;
+  margin: 5px;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+#warrior {
+  background-color: #c96;
+}
+#rogue {
+  background-color: #ff6;
+}
+#mage {
+  background-color: #5dc4ed;
+}
+#hunter {
+  background-color: #87cd73;
+
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+.btn {
+  position: relative;
+  background-color: #238f4e;
+  display: inline-block;
+  height: 60px;
+  width: auto !important;
+  border-radius: 50em;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  margin: 30px;
+}
+
+.btn::before,
+.btn::after {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+.btn::before {
+  content: 'Attacks Enemy with damge equal to your attack power.';
+  width: auto;
+  height: 60px;
+  background: rgb(255, 255, 255);
+  border-radius: 0.25em;
+  bottom: 90px;
+  line-height: 60px;
+  left: calc(50% - 80px);
+  font-size: 30px;
+  padding: 0px 10px 0px 10px;
+}
+#attack1 {
+ visibility: hidden;
+}
+#attack2 {
+  visibility: hidden;
+
+}
+#attack3 {
+visibility: hidden;
+
+}
+
+.btn::after {
+  content: '';
+  width: 0px;
+  height: 0px;
+  border:none;
+  /* border: 10px solid transparent;
+  border-top-color: #0E84A1;
+  bottom: 70px;
+  left: calc(50% - 10px); */
+}
+
+.btn:hover::before,
+.btn:hover::after,
+.btn.hover::before,
+.btn.hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.btn:hover::before,
+.btn.hover::before {
+  bottom: 80px;
+}
+
+.btn:hover::after,
+.btn.hover::after {
+  bottom: 60px;
+}
+
+
+.classTitle {
+  text-align: center;
+  font-size:30px;
+}
+
+.hpNum {
+  color: #000;
+}
+#attack1, #attack2, #attack3 {
+
+  /* display: none; */
+}
+#warriorTitle {
+  /* color: #c96; */
+}
+#mageTitle {
+  /* color: #5dc4ed; */
+}
+#hunterTitle {
+  /* color: #87cd73; */
+}
+#rogueTitle {
+  /* color:#ff6 */
+}
+.health-bar {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 200px;
+  height: 30px;
+  padding: 5px;
+  background: #ddd;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  position: relative;
+}
+.bar {
+  background: #c54;
+  width: 100%;
+  height: 20px;
+  position: relative;
+  padding-top: 2px;
+  transition: width .5s linear;
+}
+.health-bar{
+
+  text-align: center;
+}
+.hit {
+  background: rgba(255,255,255,0.6);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 0px;
+  
+  transition: width .5s linear;
+}
+
 html {
   height: 100%;
-  zoom: 52%;
+  zoom: 50%;
+}
+
+#title {
+  font-size: 100px;
+  text-align: center;
+  color: white;
+  margin-bottom: 50px;
 }
 body {
   min-height: 100%;
@@ -39,19 +236,109 @@ button {
 
 #gameText {
 
+    font-size: 50px;
+    text-align: center;
+    color: black;
+    padding: 10px;
+    margin-bottom: 50px;
+    display: inline-block;
+
+}
+#howToText {
   font-size: 30px;
-
-
+  padding: 20px;
+  line-height: 1.5em;
+  
 }
 
-h1 {
 
+
+/* MODAL CSS */
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    
 }
+.modal-content {
+
+      margin-top: 200px !important;
+       background-color: #5ff5a7 !important;
+          /* margin: 0 !important;
+          top: 50%;
+          left: 50%;
+          margin-right: -50%;
+          transform: translate(-50%, -50%) */
+}
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+.modal-body {padding: 2px 16px;}
+
+/* Modal Footer */
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+
+/* Add Animation */
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+
+/* The Close Button */
+.close {
+    color: black;
+    float: right;
+    font-size: 60px;
+    font-weight: bold;
+    font-style: normal;
+    font-family: sans-serif;
+    opacity: 1 !important;
+}
+
+.close:hover,
+.close:focus {
+    color: grey;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .2;
+}
+
+/* END MODAL CSS */
 
 .panel-title {
 
     text-align: center;
-    font-size: 160%;
+    font-size: 300%;
     background-color: #238f4e;
 
 }
@@ -81,8 +368,23 @@ h1 {
   width: 200px;
   margin: 20px 0 25px;
   overflow: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
-
+/* .work:hover {
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
+    -webkit-box-shadow: 0 5px 16px #5b6e8e;
+    box-shadow: 0 5px 16px #5b6e8e
+} */
+.classCard:hover {
+  -webkit-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  transform: scale(1.03);
+  -webkit-box-shadow: 0 5px 16px #5b6e8e;
+  box-shadow: 0 5px 16px #5b6e8e
+}
 .work:nth-child(even) {
   margin-right: 40px;
 }
@@ -112,9 +414,7 @@ h1 {
 
 
 
-.row {
-  margin-left: 1%;
-}
+
 
 
 @media (min-width: 992px) {
