@@ -20,8 +20,14 @@ a {
     color: #5c7ca8;
     -webkit-transition: .2s;
     -o-transition: .2s;
-    transition: .2s
+    transition: .2s;
 }
+
+.portfolioLinks {
+    color: white;
+
+}
+
 a:hover {
     border-color: #5c7ca8
 }
@@ -46,7 +52,7 @@ section {
 header {
     height: 100vh;
     padding: 0 20px;
-    background-image: url("../images/mountains.jpg");
+    background-image: url("../images/jpeg-optimizer_mountains.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: top;
@@ -73,7 +79,7 @@ nav {
     margin: 15px auto 0;
     padding-top: 20px;
     border-top: 1px solid;
-    width: 280px
+    width: 280px;
 }
 nav a {
     padding: 10px 8px;
@@ -140,9 +146,10 @@ nav a:hover {
     margin-right: 3px;
     margin-bottom: -1px
 }
+
 .web-links.header {
     margin: 8px auto 5px;
-    width: 150px
+    width: 150px;
 }
 .web-links.header #github,
 .web-links.header #linkedin,
@@ -384,7 +391,7 @@ nav a:hover {
 }
 .projects {
     background-color: rgba(143, 172, 211, .95);
-    background-image: url("../images/mountains.jpg");
+    background-image: url("../images/jpeg-optimizer_mountains.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: top;
@@ -504,6 +511,16 @@ nav a:hover {
     margin: 20px auto;
     width: 150px
 }
+
+.web-links.header {
+    display: flex;
+    flex-direction: row; /* Keep the flex direction as row */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    margin: 20px auto;
+    width: 150px;
+}
+
 .web-links a {
     border: none
 }
@@ -603,4 +620,3 @@ footer a:hover {
         flex-direction: column
     }
 }
-/*# sourceMappingURL=main.25e3d9ee.css.map*/
